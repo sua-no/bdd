@@ -1,46 +1,14 @@
-# Getting Started with Create React App
+# TDD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TDD의 단점은 코드 관점으로 테스트를 작성하여 코드 수정 시 불필요한 테스트 코드 수정사항이 발생한다. 이러한 상황을 해결하기 위해 BDD 방밥론이 나왔는 데 사용자 시나리오 관점으로 suite를 작성한다. 사용자 관점에서 기능 단위로 작성하며 개발 코드 변경시 테스트 코드가 변경되지 않도록 행동 단위로 작성한다.
 
-## Available Scripts
+기본적으로 테스트 코드 작성 순서는 아래와 같이 한다.
 
-In the project directory, you can run:
+- Feature : 테스트에 대상의 기능/책임을 명시한다.
+- Scenario : 테스트 목적에 대한 상황을 설명한다.
+- Given : 시나리오 진행에 필요한 값을 설정한다.
+- When : 시나리오를 진행하는데 필요한 조건을 명시한다.
+- Then : 시나리오를 완료했을 때 보장해야 하는 결과를 명시한다.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### 참고
+[실용주의 FE](https://peter-cho.gitbook.io/book/2022/6/6_2#bdd)
